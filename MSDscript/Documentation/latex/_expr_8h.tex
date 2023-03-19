@@ -1,0 +1,74 @@
+\hypertarget{_expr_8h}{}\doxysection{Expr.\+h File Reference}
+\label{_expr_8h}\index{Expr.h@{Expr.h}}
+
+
+Expression class.  
+
+
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$ostream$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_expr}{Expr}}
+\item 
+class \mbox{\hyperlink{class_num_expr}{Num\+Expr}}
+\item 
+class \mbox{\hyperlink{class_add_expr}{Add\+Expr}}
+\item 
+class \mbox{\hyperlink{class_mult_expr}{Mult\+Expr}}
+\item 
+class \mbox{\hyperlink{class_var_expr}{Var\+Expr}}
+\item 
+class \mbox{\hyperlink{class_let_expr}{Let\+Expr}}
+\item 
+class \mbox{\hyperlink{class_bool_expr}{Bool\+Expr}}
+\item 
+class \mbox{\hyperlink{class_if_expr}{If\+Expr}}
+\item 
+class \mbox{\hyperlink{class_eq_expr}{Eq\+Expr}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{_expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdf}{precedence\+\_\+t}} \{ \mbox{\hyperlink{_expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdfaf120d8115346d86e345cdd23047c9913}{prec\+\_\+none}}
+, \mbox{\hyperlink{_expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdfaa7e895a29ec0f1ce1a214fb44ce230de}{prec\+\_\+add}}
+, \mbox{\hyperlink{_expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdfac3de395d10b5fa4ccf9e4e1f0a0ef50b}{prec\+\_\+mult}}
+ \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Expression class. 
+
+Where class methods are declared for all Expression classes
+
+\begin{DoxyAuthor}{Author}
+Thomas Ford 
+
+Thomas Ford 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{_expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdf}\label{_expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdf}} 
+\index{Expr.h@{Expr.h}!precedence\_t@{precedence\_t}}
+\index{precedence\_t@{precedence\_t}!Expr.h@{Expr.h}}
+\doxysubsubsection{\texorpdfstring{precedence\_t}{precedence\_t}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdf}{precedence\+\_\+t}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{prec\_none@{prec\_none}!Expr.h@{Expr.h}}\index{Expr.h@{Expr.h}!prec\_none@{prec\_none}}}\mbox{\Hypertarget{_expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdfaf120d8115346d86e345cdd23047c9913}\label{_expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdfaf120d8115346d86e345cdd23047c9913}} 
+prec\+\_\+none&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{prec\_add@{prec\_add}!Expr.h@{Expr.h}}\index{Expr.h@{Expr.h}!prec\_add@{prec\_add}}}\mbox{\Hypertarget{_expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdfaa7e895a29ec0f1ce1a214fb44ce230de}\label{_expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdfaa7e895a29ec0f1ce1a214fb44ce230de}} 
+prec\+\_\+add&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{prec\_mult@{prec\_mult}!Expr.h@{Expr.h}}\index{Expr.h@{Expr.h}!prec\_mult@{prec\_mult}}}\mbox{\Hypertarget{_expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdfac3de395d10b5fa4ccf9e4e1f0a0ef50b}\label{_expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdfac3de395d10b5fa4ccf9e4e1f0a0ef50b}} 
+prec\+\_\+mult&\\
+\hline
+
+\end{DoxyEnumFields}

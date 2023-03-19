@@ -1,0 +1,116 @@
+\hypertarget{class_catch_1_1_generators_1_1_random_floating_generator}{}\doxysection{Catch\+::Generators\+::Random\+Floating\+Generator\texorpdfstring{$<$}{<} Float \texorpdfstring{$>$}{>} Class Template Reference}
+\label{class_catch_1_1_generators_1_1_random_floating_generator}\index{Catch::Generators::RandomFloatingGenerator$<$ Float $>$@{Catch::Generators::RandomFloatingGenerator$<$ Float $>$}}
+
+
+{\ttfamily \#include $<$catch.\+h$>$}
+
+Inheritance diagram for Catch\+::Generators\+::Random\+Floating\+Generator\texorpdfstring{$<$}{<} Float \texorpdfstring{$>$}{>}\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_catch_1_1_generators_1_1_random_floating_generator}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_catch_1_1_generators_1_1_random_floating_generator_abce275ce88f7c3465addd7a98b6c408d}{Random\+Floating\+Generator}} (Float a, Float b)
+\item 
+Float const \& \mbox{\hyperlink{class_catch_1_1_generators_1_1_random_floating_generator_a307eff56c58d4c6a223f35ac4d4ba710}{get}} () const override
+\item 
+bool \mbox{\hyperlink{class_catch_1_1_generators_1_1_random_floating_generator_a6a65e5f16abd884f58c31581b2a0d6db}{next}} () override
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{struct_catch_1_1_generators_1_1_i_generator}{Catch\+::\+Generators\+::\+IGenerator$<$ Float $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{struct_catch_1_1_generators_1_1_i_generator_afe5b6eecbbd735e69748d68574611747}{$\sim$\+IGenerator}} ()=default
+\item 
+virtual Float const \& \mbox{\hyperlink{struct_catch_1_1_generators_1_1_i_generator_a0fb6da789cda5b4e90f036737db82485}{get}} () const=0
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_catch_1_1_generators_1_1_generator_untyped_base}{Catch\+::\+Generators\+::\+Generator\+Untyped\+Base}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_catch_1_1_generators_1_1_generator_untyped_base_a00ff0179d739c3016756b6cf56fabbad}{Generator\+Untyped\+Base}} ()=default
+\item 
+virtual \mbox{\hyperlink{class_catch_1_1_generators_1_1_generator_untyped_base_a6f05f8099fdc5744a7aff68aa8c09c7f}{$\sim$\+Generator\+Untyped\+Base}} ()
+\item 
+virtual bool \mbox{\hyperlink{class_catch_1_1_generators_1_1_generator_untyped_base_aeed3c0cd6233c5f553549e453b8d6638}{next}} ()=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_catch_1_1_simple_pcg32}{Catch\+::\+Simple\+Pcg32}} \& \mbox{\hyperlink{class_catch_1_1_generators_1_1_random_floating_generator_a6142d65c14d2749ecb3dbc6949c0ca1c}{m\+\_\+rng}}
+\item 
+std\+::uniform\+\_\+real\+\_\+distribution$<$ Float $>$ \mbox{\hyperlink{class_catch_1_1_generators_1_1_random_floating_generator_a6a79be0000a6c2a17e4f11dadb43c8ac}{m\+\_\+dist}}
+\item 
+Float \mbox{\hyperlink{class_catch_1_1_generators_1_1_random_floating_generator_a3591690761d8da0f4438623a453e6bc0}{m\+\_\+current\+\_\+number}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+\doxysubsubsection*{Public Types inherited from \mbox{\hyperlink{struct_catch_1_1_generators_1_1_i_generator}{Catch\+::\+Generators\+::\+IGenerator$<$ Float $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{struct_catch_1_1_generators_1_1_i_generator_a1f8677875fe0ff31f39c60d45504b9a5}{type}} = Float
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_catch_1_1_generators_1_1_random_floating_generator_abce275ce88f7c3465addd7a98b6c408d}\label{class_catch_1_1_generators_1_1_random_floating_generator_abce275ce88f7c3465addd7a98b6c408d}} 
+\index{Catch::Generators::RandomFloatingGenerator$<$ Float $>$@{Catch::Generators::RandomFloatingGenerator$<$ Float $>$}!RandomFloatingGenerator@{RandomFloatingGenerator}}
+\index{RandomFloatingGenerator@{RandomFloatingGenerator}!Catch::Generators::RandomFloatingGenerator$<$ Float $>$@{Catch::Generators::RandomFloatingGenerator$<$ Float $>$}}
+\doxysubsubsection{\texorpdfstring{RandomFloatingGenerator()}{RandomFloatingGenerator()}}
+{\footnotesize\ttfamily template$<$typename Float $>$ \\
+\mbox{\hyperlink{class_catch_1_1_generators_1_1_random_floating_generator}{Catch\+::\+Generators\+::\+Random\+Floating\+Generator}}$<$ Float $>$\+::\+Random\+Floating\+Generator (\begin{DoxyParamCaption}\item[{Float}]{a,  }\item[{Float}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_catch_1_1_generators_1_1_random_floating_generator_a307eff56c58d4c6a223f35ac4d4ba710}\label{class_catch_1_1_generators_1_1_random_floating_generator_a307eff56c58d4c6a223f35ac4d4ba710}} 
+\index{Catch::Generators::RandomFloatingGenerator$<$ Float $>$@{Catch::Generators::RandomFloatingGenerator$<$ Float $>$}!get@{get}}
+\index{get@{get}!Catch::Generators::RandomFloatingGenerator$<$ Float $>$@{Catch::Generators::RandomFloatingGenerator$<$ Float $>$}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily template$<$typename Float $>$ \\
+Float const  \& \mbox{\hyperlink{class_catch_1_1_generators_1_1_random_floating_generator}{Catch\+::\+Generators\+::\+Random\+Floating\+Generator}}$<$ Float $>$\+::get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{struct_catch_1_1_generators_1_1_i_generator_a0fb6da789cda5b4e90f036737db82485}{Catch\+::\+Generators\+::\+IGenerator$<$ Float $>$}}.
+
+\mbox{\Hypertarget{class_catch_1_1_generators_1_1_random_floating_generator_a6a65e5f16abd884f58c31581b2a0d6db}\label{class_catch_1_1_generators_1_1_random_floating_generator_a6a65e5f16abd884f58c31581b2a0d6db}} 
+\index{Catch::Generators::RandomFloatingGenerator$<$ Float $>$@{Catch::Generators::RandomFloatingGenerator$<$ Float $>$}!next@{next}}
+\index{next@{next}!Catch::Generators::RandomFloatingGenerator$<$ Float $>$@{Catch::Generators::RandomFloatingGenerator$<$ Float $>$}}
+\doxysubsubsection{\texorpdfstring{next()}{next()}}
+{\footnotesize\ttfamily template$<$typename Float $>$ \\
+bool \mbox{\hyperlink{class_catch_1_1_generators_1_1_random_floating_generator}{Catch\+::\+Generators\+::\+Random\+Floating\+Generator}}$<$ Float $>$\+::next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_catch_1_1_generators_1_1_generator_untyped_base_aeed3c0cd6233c5f553549e453b8d6638}{Catch\+::\+Generators\+::\+Generator\+Untyped\+Base}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_catch_1_1_generators_1_1_random_floating_generator_a3591690761d8da0f4438623a453e6bc0}\label{class_catch_1_1_generators_1_1_random_floating_generator_a3591690761d8da0f4438623a453e6bc0}} 
+\index{Catch::Generators::RandomFloatingGenerator$<$ Float $>$@{Catch::Generators::RandomFloatingGenerator$<$ Float $>$}!m\_current\_number@{m\_current\_number}}
+\index{m\_current\_number@{m\_current\_number}!Catch::Generators::RandomFloatingGenerator$<$ Float $>$@{Catch::Generators::RandomFloatingGenerator$<$ Float $>$}}
+\doxysubsubsection{\texorpdfstring{m\_current\_number}{m\_current\_number}}
+{\footnotesize\ttfamily template$<$typename Float $>$ \\
+Float \mbox{\hyperlink{class_catch_1_1_generators_1_1_random_floating_generator}{Catch\+::\+Generators\+::\+Random\+Floating\+Generator}}$<$ Float $>$\+::m\+\_\+current\+\_\+number\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_catch_1_1_generators_1_1_random_floating_generator_a6a79be0000a6c2a17e4f11dadb43c8ac}\label{class_catch_1_1_generators_1_1_random_floating_generator_a6a79be0000a6c2a17e4f11dadb43c8ac}} 
+\index{Catch::Generators::RandomFloatingGenerator$<$ Float $>$@{Catch::Generators::RandomFloatingGenerator$<$ Float $>$}!m\_dist@{m\_dist}}
+\index{m\_dist@{m\_dist}!Catch::Generators::RandomFloatingGenerator$<$ Float $>$@{Catch::Generators::RandomFloatingGenerator$<$ Float $>$}}
+\doxysubsubsection{\texorpdfstring{m\_dist}{m\_dist}}
+{\footnotesize\ttfamily template$<$typename Float $>$ \\
+std\+::uniform\+\_\+real\+\_\+distribution$<$Float$>$ \mbox{\hyperlink{class_catch_1_1_generators_1_1_random_floating_generator}{Catch\+::\+Generators\+::\+Random\+Floating\+Generator}}$<$ Float $>$\+::m\+\_\+dist\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_catch_1_1_generators_1_1_random_floating_generator_a6142d65c14d2749ecb3dbc6949c0ca1c}\label{class_catch_1_1_generators_1_1_random_floating_generator_a6142d65c14d2749ecb3dbc6949c0ca1c}} 
+\index{Catch::Generators::RandomFloatingGenerator$<$ Float $>$@{Catch::Generators::RandomFloatingGenerator$<$ Float $>$}!m\_rng@{m\_rng}}
+\index{m\_rng@{m\_rng}!Catch::Generators::RandomFloatingGenerator$<$ Float $>$@{Catch::Generators::RandomFloatingGenerator$<$ Float $>$}}
+\doxysubsubsection{\texorpdfstring{m\_rng}{m\_rng}}
+{\footnotesize\ttfamily template$<$typename Float $>$ \\
+\mbox{\hyperlink{class_catch_1_1_simple_pcg32}{Catch\+::\+Simple\+Pcg32}}\& \mbox{\hyperlink{class_catch_1_1_generators_1_1_random_floating_generator}{Catch\+::\+Generators\+::\+Random\+Floating\+Generator}}$<$ Float $>$\+::m\+\_\+rng\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{catch_8h}{catch.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,6 @@
+Instructions For Running Tests + Benchmarks:
+
+Program includes a Makefile that can be run using the commandline instruction "make run" in the program directory.
+This command will run both testing and benchmarks for MallocReplacement.
+
+Included is a PDF of the benchmark run showing that Malloc Replacement is much slower than malloc().

@@ -1,0 +1,30 @@
+\hypertarget{parse_8h_source}{}\doxysection{parse.\+h}
+\label{parse_8h_source}\index{parse.h@{parse.h}}
+\mbox{\hyperlink{parse_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Created\ by\ Thomas\ Ford\ on\ 2/16/23.}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ MSDSCRIPT\_COMMAND\_LINE\_PARSE\_H}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ MSDSCRIPT\_COMMAND\_LINE\_PARSE\_H}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_expr_8h}{Expr.h}}"{}}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ consume(std::istream\ \&in,\ \textcolor{keywordtype}{int}\ expect);}
+\DoxyCodeLine{00011\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ skip\_whitespace(std::istream\ \&in);}
+\DoxyCodeLine{00012\ \mbox{\hyperlink{class_expr}{Expr}}\ *\mbox{\hyperlink{parse_8h_a07b3dca8f632e9fb5beea05b92ca2a82}{parse\_num}}(std::istream\ \&in);}
+\DoxyCodeLine{00013\ \mbox{\hyperlink{class_expr}{Expr}}\ *\mbox{\hyperlink{parse_8h_aa0e60a31d186f4377681b2f17737cc3b}{parse\_var}}(std::istream\ \&in);}
+\DoxyCodeLine{00014\ \mbox{\hyperlink{class_expr}{Expr}}\ *\mbox{\hyperlink{parse_8h_a3b7e13bbf3399b53c5f24c66f243a9fa}{parse\_let}}(std::istream\ \&in);}
+\DoxyCodeLine{00015\ \mbox{\hyperlink{class_expr}{Expr}}\ *\mbox{\hyperlink{parse_8h_a1dce771687d9488eb8c036fa7b8f6cfb}{parse\_if}}(std::istream\ \&in);}
+\DoxyCodeLine{00016\ std::string\ \mbox{\hyperlink{parse_8h_ac7ffed9ed97ecdecf39d6a7d92ada58a}{parse\_keyword}}(std::istream\ \&in);}
+\DoxyCodeLine{00017\ \mbox{\hyperlink{class_expr}{Expr}}\ *\mbox{\hyperlink{parse_8h_ad69fc10130374e67252011d435a29656}{parse\_expr}}(std::istream\ \&in);}
+\DoxyCodeLine{00018\ \mbox{\hyperlink{class_expr}{Expr}}\ *\mbox{\hyperlink{parse_8h_a7673dcb66b60f9ed05fce1595a9ba74f}{parse\_comparg}}(std::istream\ \&in);}
+\DoxyCodeLine{00019\ \mbox{\hyperlink{class_expr}{Expr}}\ *\mbox{\hyperlink{parse_8h_a3fb3cf5fc9fcdf9c2c37caa5caceba9b}{parse\_addend}}(std::istream\ \&in);}
+\DoxyCodeLine{00020\ \mbox{\hyperlink{class_expr}{Expr}}\ *\mbox{\hyperlink{parse_8h_a6e1ccd32bdf8c66064be5f3c1b365020}{parse\_multicand}}(std::istream\ \&in);}
+\DoxyCodeLine{00021\ \mbox{\hyperlink{class_expr}{Expr}}\ *\mbox{\hyperlink{parse_8h_a7c44e962b47aa78012851be721151dfc}{parse\_str}}(\textcolor{keyword}{const}\ std::string\&\ s);}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//MSDSCRIPT\_COMMAND\_LINE\_PARSE\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <title>Simple Web Server</title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="SimpleWebServer.css">
+    </head>
+
+<body>
+<!--    <h1>Chat Server</h1>-->
+
+<!--    <p1>-->
+
+<!--        <label>Username</label>-->
+<!--        <label for="userName"></label>-->
+<!--        <textarea id ="userName" rows="1" ></textarea>-->
+
+<!--    </p1>-->
+
+<!--    <p2>-->
+
+<!--        <label>Chat Room</label>-->
+<!--        <label for="roomName"></label>-->
+<!--        <textarea id ="roomName" rows="1"></textarea>-->
+
+<!--    </p2>-->
+
+
+<!--    <p id="leftDiv">-->
+<!--        <label>Users</label>-->
+<!--    </p>-->
+
+
+<!--    <p id="message">-->
+<!--        <label>Message</label>-->
+<!--    </p>-->
+
+<h1>Chat Room</h1>
+<p>
+    Name: <input type="text" id='userName'> &nbsp&nbsp&nbsp
+    Room: <input type="text" id='roomName'>
+    <br>
+</p>
+<div id="parentDiv">
+    <div id="left">
+        Users
+        <p id="peoplepara"></p>
+    </div>
+    <div id="right">
+        Chat
+        <p id="chatpara"></p>
+        <div id="enterText">
+            Enter your text:
+            <input type="text" id="msgArea" maxlength="100" size="100">
+        </div>
+    </div>
+</div>
+<button id="leave">Leave Chat</button>
+<script src="SimpleWebServer.js"></script>
+</body>
+</html>

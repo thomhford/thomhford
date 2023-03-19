@@ -1,0 +1,189 @@
+\hypertarget{class_var_expr}{}\doxysection{Var\+Expr Class Reference}
+\label{class_var_expr}\index{VarExpr@{VarExpr}}
+
+
+{\ttfamily \#include $<$Expr.\+h$>$}
+
+Inheritance diagram for Var\+Expr\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_var_expr}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_var_expr_a8c3eb52f66680958290bf604ef4750f6}{Var\+Expr}} (std\+::string \mbox{\hyperlink{class_var_expr_adb42e5b04ee7021703a90bd1dd4e3669}{val}})
+\item 
+bool \mbox{\hyperlink{class_var_expr_aff99d16e288708e7bb001e313ad69d7f}{equals}} (\mbox{\hyperlink{class_expr}{Expr}} $\ast$e) override
+\item 
+\mbox{\hyperlink{class_val}{Val}} $\ast$ \mbox{\hyperlink{class_var_expr_ae056249d67390250a16b68dbbf90297f}{interp}} () override
+\item 
+bool \mbox{\hyperlink{class_var_expr_a133fe646e53039829a89ad73dad88ef6}{has\+\_\+variable}} () override
+\item 
+\mbox{\hyperlink{class_expr}{Expr}} $\ast$ \mbox{\hyperlink{class_var_expr_a4d75116e2c68b84e22ff790546810db8}{subst}} (std\+::string, \mbox{\hyperlink{class_expr}{Expr}} $\ast$) override
+\item 
+void \mbox{\hyperlink{class_var_expr_addf240bf781a47da938e57194ada32be}{print}} (std\+::ostream \&ot) override
+\item 
+void \mbox{\hyperlink{class_var_expr_adebcce92b126f45cce0b6f082b3e99dd}{pretty\+\_\+print\+\_\+at}} (std\+::ostream \&ot, \mbox{\hyperlink{_expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdf}{precedence\+\_\+t}}, bool let\+Parenth, std\+::streampos \&streampos) override
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_expr}{Expr}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \mbox{\hyperlink{class_expr_abf9cdb765fb84304881789d273d7594f}{equals}} (\mbox{\hyperlink{class_expr}{Expr}} $\ast$e)=0
+\item 
+virtual \mbox{\hyperlink{class_val}{Val}} $\ast$ \mbox{\hyperlink{class_expr_aa671ba2b665001c815588a7271735104}{interp}} ()=0
+\item 
+virtual bool \mbox{\hyperlink{class_expr_a92dc26078993a4b9721ea732274a435c}{has\+\_\+variable}} ()=0
+\item 
+virtual \mbox{\hyperlink{class_expr}{Expr}} $\ast$ \mbox{\hyperlink{class_expr_a36ff14b766e7d187d2600a01c1fe77e2}{subst}} (std\+::string, \mbox{\hyperlink{class_expr}{Expr}} $\ast$)=0
+\item 
+virtual void \mbox{\hyperlink{class_expr_ae5e0b4d0ddc57bab1c33bf271f49ff4c}{print}} (std\+::ostream \&ot)=0
+\item 
+std\+::string \mbox{\hyperlink{class_expr_abe130f37bd185ec13c5113de16fc7bf7}{to\+\_\+string}} ()
+\item 
+virtual void \mbox{\hyperlink{class_expr_a1e6867ad86b002a8779c4679d42373c8}{pretty\+\_\+print\+\_\+at}} (std\+::ostream \&ot, \mbox{\hyperlink{_expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdf}{precedence\+\_\+t}}, bool let\+Parenth, std\+::streampos \&streampos)=0
+\item 
+void \mbox{\hyperlink{class_expr_a747e1f67ac65a4dd86458a03c9caa282}{pretty\+\_\+print}} (std\+::ostream \&ot)
+\item 
+std\+::string \mbox{\hyperlink{class_expr_a6ad7c18234f22d96d6917089b5bd7caa}{to\+\_\+pretty\+\_\+string}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_var_expr_adb42e5b04ee7021703a90bd1dd4e3669}{val}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a variable as an expression 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_var_expr_a8c3eb52f66680958290bf604ef4750f6}\label{class_var_expr_a8c3eb52f66680958290bf604ef4750f6}} 
+\index{VarExpr@{VarExpr}!VarExpr@{VarExpr}}
+\index{VarExpr@{VarExpr}!VarExpr@{VarExpr}}
+\doxysubsubsection{\texorpdfstring{VarExpr()}{VarExpr()}}
+{\footnotesize\ttfamily Var\+Expr\+::\+Var\+Expr (\begin{DoxyParamCaption}\item[{std\+::string}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_var_expr_aff99d16e288708e7bb001e313ad69d7f}\label{class_var_expr_aff99d16e288708e7bb001e313ad69d7f}} 
+\index{VarExpr@{VarExpr}!equals@{equals}}
+\index{equals@{equals}!VarExpr@{VarExpr}}
+\doxysubsubsection{\texorpdfstring{equals()}{equals()}}
+{\footnotesize\ttfamily bool Var\+Expr\+::equals (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_expr}{Expr}} $\ast$}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Compares two expressions
+\begin{DoxyItemize}
+\item We need to cast the checked \mbox{\hyperlink{class_expr}{Expr}} to determine if they type is correct. If the type is incorrect, return false
+\item If type comparison is matching, return if the value stored is the same 
+\begin{DoxyParams}{Parameters}
+{\em e} & what we are comparing \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+if \mbox{\hyperlink{class_expr}{Expr}} are equal 
+\end{DoxyReturn}
+
+\end{DoxyItemize}
+
+Implements \mbox{\hyperlink{class_expr_abf9cdb765fb84304881789d273d7594f}{Expr}}.
+
+\mbox{\Hypertarget{class_var_expr_a133fe646e53039829a89ad73dad88ef6}\label{class_var_expr_a133fe646e53039829a89ad73dad88ef6}} 
+\index{VarExpr@{VarExpr}!has\_variable@{has\_variable}}
+\index{has\_variable@{has\_variable}!VarExpr@{VarExpr}}
+\doxysubsubsection{\texorpdfstring{has\_variable()}{has\_variable()}}
+{\footnotesize\ttfamily bool Var\+Expr\+::has\+\_\+variable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Var is a variable so always return true \begin{DoxyReturn}{Returns}
+true if the expression is a variable or contains a variable, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_expr_a92dc26078993a4b9721ea732274a435c}{Expr}}.
+
+\mbox{\Hypertarget{class_var_expr_ae056249d67390250a16b68dbbf90297f}\label{class_var_expr_ae056249d67390250a16b68dbbf90297f}} 
+\index{VarExpr@{VarExpr}!interp@{interp}}
+\index{interp@{interp}!VarExpr@{VarExpr}}
+\doxysubsubsection{\texorpdfstring{interp()}{interp()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_val}{Val}} $\ast$ Var\+Expr\+::interp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+A variable has no value, so interp for a variable should throw a std\+::runtime\+\_\+error exception \begin{DoxyReturn}{Returns}
+an int for the value of the expression 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_expr_aa671ba2b665001c815588a7271735104}{Expr}}.
+
+\mbox{\Hypertarget{class_var_expr_adebcce92b126f45cce0b6f082b3e99dd}\label{class_var_expr_adebcce92b126f45cce0b6f082b3e99dd}} 
+\index{VarExpr@{VarExpr}!pretty\_print\_at@{pretty\_print\_at}}
+\index{pretty\_print\_at@{pretty\_print\_at}!VarExpr@{VarExpr}}
+\doxysubsubsection{\texorpdfstring{pretty\_print\_at()}{pretty\_print\_at()}}
+{\footnotesize\ttfamily void Var\+Expr\+::pretty\+\_\+print\+\_\+at (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{ot,  }\item[{\mbox{\hyperlink{_expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdf}{precedence\+\_\+t}}}]{prec,  }\item[{bool}]{let\+Parenth,  }\item[{std\+::streampos \&}]{streampos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Prints the value of \mbox{\hyperlink{class_var_expr}{Var\+Expr}} to std\+::ostream 
+\begin{DoxyParams}{Parameters}
+{\em ot} & where we will print to \\
+\hline
+{\em prec} & determines the level of formatting for \mbox{\hyperlink{class_expr_a747e1f67ac65a4dd86458a03c9caa282}{pretty\+\_\+print()}} used. Is never used for \mbox{\hyperlink{class_var_expr}{Var\+Expr}} \\
+\hline
+{\em let\+Parenth} & used by let expressions \\
+\hline
+{\em streampos} & used by let expressions \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_expr_a1e6867ad86b002a8779c4679d42373c8}{Expr}}.
+
+\mbox{\Hypertarget{class_var_expr_addf240bf781a47da938e57194ada32be}\label{class_var_expr_addf240bf781a47da938e57194ada32be}} 
+\index{VarExpr@{VarExpr}!print@{print}}
+\index{print@{print}!VarExpr@{VarExpr}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Var\+Expr\+::print (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{ot }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Adds the \mbox{\hyperlink{class_var_expr}{Var\+Expr}} value to an ostream for printing. 
+\begin{DoxyParams}{Parameters}
+{\em ot} & an ostream where expressions and supporting characters are are stored for printing. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_expr_ae5e0b4d0ddc57bab1c33bf271f49ff4c}{Expr}}.
+
+\mbox{\Hypertarget{class_var_expr_a4d75116e2c68b84e22ff790546810db8}\label{class_var_expr_a4d75116e2c68b84e22ff790546810db8}} 
+\index{VarExpr@{VarExpr}!subst@{subst}}
+\index{subst@{subst}!VarExpr@{VarExpr}}
+\doxysubsubsection{\texorpdfstring{subst()}{subst()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_expr}{Expr}} $\ast$ Var\+Expr\+::subst (\begin{DoxyParamCaption}\item[{std\+::string}]{variable,  }\item[{\mbox{\hyperlink{class_expr}{Expr}} $\ast$}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Takes a string and an Expr$\ast$ and everywhere that the expression (whose subst method is called) contains a variable matching the string, the result Expr$\ast$ should have the given replacement, instead. 
+\begin{DoxyParams}{Parameters}
+{\em string} & variable to match \\
+\hline
+{\em e} & Expression to replace variable with \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+new expression consisting of swapped variables if variables match string 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_expr_a36ff14b766e7d187d2600a01c1fe77e2}{Expr}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_var_expr_adb42e5b04ee7021703a90bd1dd4e3669}\label{class_var_expr_adb42e5b04ee7021703a90bd1dd4e3669}} 
+\index{VarExpr@{VarExpr}!val@{val}}
+\index{val@{val}!VarExpr@{VarExpr}}
+\doxysubsubsection{\texorpdfstring{val}{val}}
+{\footnotesize\ttfamily std\+::string Var\+Expr\+::val}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_expr_8h}{Expr.\+h}}\item 
+\mbox{\hyperlink{_expr_8cpp}{Expr.\+cpp}}\end{DoxyCompactItemize}

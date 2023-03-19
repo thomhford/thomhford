@@ -1,0 +1,180 @@
+\hypertarget{class_num_val}{}\doxysection{Num\+Val Class Reference}
+\label{class_num_val}\index{NumVal@{NumVal}}
+
+
+{\ttfamily \#include $<$Val.\+h$>$}
+
+Inheritance diagram for Num\+Val\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_num_val}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_num_val_aec0681d0ca58970b0ccf528e382d9bb4}{Num\+Val}} (int val)
+\item 
+bool \mbox{\hyperlink{class_num_val_a42b28e5a332f961f94d99c0d76d477ae}{equals}} (\mbox{\hyperlink{class_val}{Val}} $\ast$e) override
+\item 
+\mbox{\hyperlink{class_val}{Val}} $\ast$ \mbox{\hyperlink{class_num_val_a287c9af9e77600796cd8597b4d989b27}{add\+\_\+to}} (\mbox{\hyperlink{class_val}{Val}} $\ast$e) override
+\item 
+\mbox{\hyperlink{class_val}{Val}} $\ast$ \mbox{\hyperlink{class_num_val_a813dcfbdbf063d459b3cb13ad697a41b}{mult\+\_\+with}} (\mbox{\hyperlink{class_val}{Val}} $\ast$e) override
+\item 
+\mbox{\hyperlink{class_expr}{Expr}} $\ast$ \mbox{\hyperlink{class_num_val_ae60543bf69d4f50bf0a1adea68f6a680}{to\+\_\+expr}} () override
+\item 
+void \mbox{\hyperlink{class_num_val_ac1506d7a46da42a39a47901b982bfb71}{print}} (std\+::ostream \&ot) override
+\item 
+bool \mbox{\hyperlink{class_num_val_a8b0f735f85b123a4c7eb88e13b36a237}{is\+\_\+true}} () override
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_val}{Val}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_val_abcff5ad6415a7ead83933e45cc3dc9c0}{to\+\_\+string}} ()
+\item 
+virtual bool \mbox{\hyperlink{class_val_aa4b5588f25d4322b6b2d570fba0d5e27}{equals}} (\mbox{\hyperlink{class_val}{Val}} $\ast$e)=0
+\item 
+virtual \mbox{\hyperlink{class_val}{Val}} $\ast$ \mbox{\hyperlink{class_val_a62aa81989bd013e49022ad3028f6d14d}{add\+\_\+to}} (\mbox{\hyperlink{class_val}{Val}} $\ast$e)=0
+\item 
+virtual \mbox{\hyperlink{class_val}{Val}} $\ast$ \mbox{\hyperlink{class_val_a36929b49ead2a2a2bbea232656797e71}{mult\+\_\+with}} (\mbox{\hyperlink{class_val}{Val}} $\ast$e)=0
+\item 
+virtual \mbox{\hyperlink{class_expr}{Expr}} $\ast$ \mbox{\hyperlink{class_val_ac26c69f7a71d9c18627864f62bd83dbc}{to\+\_\+expr}} ()=0
+\item 
+virtual void \mbox{\hyperlink{class_val_ab53c7402d5b7c094bfe63b0292fade0b}{print}} (std\+::ostream \&ot)=0
+\item 
+virtual bool \mbox{\hyperlink{class_val_ad10185dc7531f869c7197ba89479ff95}{is\+\_\+true}} ()=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_num_val_a188a97b38ad11d576d89e75226ed1dab}{rep}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a Num value 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_num_val_aec0681d0ca58970b0ccf528e382d9bb4}\label{class_num_val_aec0681d0ca58970b0ccf528e382d9bb4}} 
+\index{NumVal@{NumVal}!NumVal@{NumVal}}
+\index{NumVal@{NumVal}!NumVal@{NumVal}}
+\doxysubsubsection{\texorpdfstring{NumVal()}{NumVal()}}
+{\footnotesize\ttfamily Num\+Val\+::\+Num\+Val (\begin{DoxyParamCaption}\item[{int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_num_val_a287c9af9e77600796cd8597b4d989b27}\label{class_num_val_a287c9af9e77600796cd8597b4d989b27}} 
+\index{NumVal@{NumVal}!add\_to@{add\_to}}
+\index{add\_to@{add\_to}!NumVal@{NumVal}}
+\doxysubsubsection{\texorpdfstring{add\_to()}{add\_to()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_val}{Val}} $\ast$ Num\+Val\+::add\+\_\+to (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_val}{Val}} $\ast$}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Needed by \mbox{\hyperlink{class_add_expr}{Add\+Expr}} to add values. Must ensure that values being added are \mbox{\hyperlink{class_num_val}{Num\+Val}}. CANNOT ADD OTHER VALUE TYPES 
+\begin{DoxyParams}{Parameters}
+{\em e} & what is being added \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+sum of added values 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_val_a62aa81989bd013e49022ad3028f6d14d}{Val}}.
+
+\mbox{\Hypertarget{class_num_val_a42b28e5a332f961f94d99c0d76d477ae}\label{class_num_val_a42b28e5a332f961f94d99c0d76d477ae}} 
+\index{NumVal@{NumVal}!equals@{equals}}
+\index{equals@{equals}!NumVal@{NumVal}}
+\doxysubsubsection{\texorpdfstring{equals()}{equals()}}
+{\footnotesize\ttfamily bool Num\+Val\+::equals (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_val}{Val}} $\ast$}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Compares two values
+\begin{DoxyItemize}
+\item We need to cast the checked \mbox{\hyperlink{class_val}{Val}} to determine if they type is correct. If the type is incorrect, return false
+\item If type comparison is matching, return if the value stored is the same 
+\begin{DoxyParams}{Parameters}
+{\em e} & what we are comparing \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+if \mbox{\hyperlink{class_val}{Val}} are equal 
+\end{DoxyReturn}
+
+\end{DoxyItemize}
+
+Implements \mbox{\hyperlink{class_val_aa4b5588f25d4322b6b2d570fba0d5e27}{Val}}.
+
+\mbox{\Hypertarget{class_num_val_a8b0f735f85b123a4c7eb88e13b36a237}\label{class_num_val_a8b0f735f85b123a4c7eb88e13b36a237}} 
+\index{NumVal@{NumVal}!is\_true@{is\_true}}
+\index{is\_true@{is\_true}!NumVal@{NumVal}}
+\doxysubsubsection{\texorpdfstring{is\_true()}{is\_true()}}
+{\footnotesize\ttfamily bool Num\+Val\+::is\+\_\+true (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Not a boolean \begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_val_ad10185dc7531f869c7197ba89479ff95}{Val}}.
+
+\mbox{\Hypertarget{class_num_val_a813dcfbdbf063d459b3cb13ad697a41b}\label{class_num_val_a813dcfbdbf063d459b3cb13ad697a41b}} 
+\index{NumVal@{NumVal}!mult\_with@{mult\_with}}
+\index{mult\_with@{mult\_with}!NumVal@{NumVal}}
+\doxysubsubsection{\texorpdfstring{mult\_with()}{mult\_with()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_val}{Val}} $\ast$ Num\+Val\+::mult\+\_\+with (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_val}{Val}} $\ast$}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Needed by \mbox{\hyperlink{class_mult_expr}{Mult\+Expr}} to multiply values. Must ensure that values being multiplied are \mbox{\hyperlink{class_num_val}{Num\+Val}}. CANNOT MULTIPLY OTHER VALUE TYPES 
+\begin{DoxyParams}{Parameters}
+{\em e} & what is being multiplied \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+product of multiplied values 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_val_a36929b49ead2a2a2bbea232656797e71}{Val}}.
+
+\mbox{\Hypertarget{class_num_val_ac1506d7a46da42a39a47901b982bfb71}\label{class_num_val_ac1506d7a46da42a39a47901b982bfb71}} 
+\index{NumVal@{NumVal}!print@{print}}
+\index{print@{print}!NumVal@{NumVal}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Num\+Val\+::print (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{ot }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Used by to string to convert value to string 
+\begin{DoxyParams}{Parameters}
+{\em ot} & where string will be written \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_val_ab53c7402d5b7c094bfe63b0292fade0b}{Val}}.
+
+\mbox{\Hypertarget{class_num_val_ae60543bf69d4f50bf0a1adea68f6a680}\label{class_num_val_ae60543bf69d4f50bf0a1adea68f6a680}} 
+\index{NumVal@{NumVal}!to\_expr@{to\_expr}}
+\index{to\_expr@{to\_expr}!NumVal@{NumVal}}
+\doxysubsubsection{\texorpdfstring{to\_expr()}{to\_expr()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_expr}{Expr}} $\ast$ Num\+Val\+::to\+\_\+expr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Converts values to \mbox{\hyperlink{class_expr}{Expr}} \begin{DoxyReturn}{Returns}
+an \mbox{\hyperlink{class_expr}{Expr}} representing converted value 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_val_ac26c69f7a71d9c18627864f62bd83dbc}{Val}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_num_val_a188a97b38ad11d576d89e75226ed1dab}\label{class_num_val_a188a97b38ad11d576d89e75226ed1dab}} 
+\index{NumVal@{NumVal}!rep@{rep}}
+\index{rep@{rep}!NumVal@{NumVal}}
+\doxysubsubsection{\texorpdfstring{rep}{rep}}
+{\footnotesize\ttfamily int Num\+Val\+::rep}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_val_8h}{Val.\+h}}\item 
+\mbox{\hyperlink{_val_8cpp}{Val.\+cpp}}\end{DoxyCompactItemize}

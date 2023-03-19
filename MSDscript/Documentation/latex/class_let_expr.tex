@@ -1,0 +1,205 @@
+\hypertarget{class_let_expr}{}\doxysection{Let\+Expr Class Reference}
+\label{class_let_expr}\index{LetExpr@{LetExpr}}
+
+
+{\ttfamily \#include $<$Expr.\+h$>$}
+
+Inheritance diagram for Let\+Expr\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_let_expr}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_let_expr_a183c7c65029679d1a1b1d41451c28c09}{Let\+Expr}} (std\+::string \mbox{\hyperlink{class_let_expr_a4d335c11ceaf383b19c7be3ec80be2cc}{lhs}}, \mbox{\hyperlink{class_expr}{Expr}} $\ast$\mbox{\hyperlink{class_let_expr_a21ad0acae196463550d605713e309ecd}{rhs}}, \mbox{\hyperlink{class_expr}{Expr}} $\ast$\mbox{\hyperlink{class_let_expr_ab9d3883e71225da0ba1bfbfdadf51342}{body}})
+\item 
+bool \mbox{\hyperlink{class_let_expr_a06fd37372871f675e035f1ee8edd4061}{equals}} (\mbox{\hyperlink{class_expr}{Expr}} $\ast$e) override
+\item 
+\mbox{\hyperlink{class_val}{Val}} $\ast$ \mbox{\hyperlink{class_let_expr_a8a25bf277e0af0dfd51a4e5c246057b9}{interp}} () override
+\item 
+bool \mbox{\hyperlink{class_let_expr_a23130b914466ff9cee5d76b333fd3440}{has\+\_\+variable}} () override
+\item 
+\mbox{\hyperlink{class_expr}{Expr}} $\ast$ \mbox{\hyperlink{class_let_expr_a2cd74757200b521ae9e98425e5c88f14}{subst}} (std\+::string, \mbox{\hyperlink{class_expr}{Expr}} $\ast$) override
+\item 
+void \mbox{\hyperlink{class_let_expr_a0b458e5fd879624d2cb0ef9d43856b8e}{print}} (std\+::ostream \&ot) override
+\item 
+void \mbox{\hyperlink{class_let_expr_a7422631152726a99c06fe5c3d26791c2}{pretty\+\_\+print\+\_\+at}} (std\+::ostream \&ot, \mbox{\hyperlink{_expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdf}{precedence\+\_\+t}}, bool let\+Parenth, std\+::streampos \&stream\+Pos) override
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_expr}{Expr}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \mbox{\hyperlink{class_expr_abf9cdb765fb84304881789d273d7594f}{equals}} (\mbox{\hyperlink{class_expr}{Expr}} $\ast$e)=0
+\item 
+virtual \mbox{\hyperlink{class_val}{Val}} $\ast$ \mbox{\hyperlink{class_expr_aa671ba2b665001c815588a7271735104}{interp}} ()=0
+\item 
+virtual bool \mbox{\hyperlink{class_expr_a92dc26078993a4b9721ea732274a435c}{has\+\_\+variable}} ()=0
+\item 
+virtual \mbox{\hyperlink{class_expr}{Expr}} $\ast$ \mbox{\hyperlink{class_expr_a36ff14b766e7d187d2600a01c1fe77e2}{subst}} (std\+::string, \mbox{\hyperlink{class_expr}{Expr}} $\ast$)=0
+\item 
+virtual void \mbox{\hyperlink{class_expr_ae5e0b4d0ddc57bab1c33bf271f49ff4c}{print}} (std\+::ostream \&ot)=0
+\item 
+std\+::string \mbox{\hyperlink{class_expr_abe130f37bd185ec13c5113de16fc7bf7}{to\+\_\+string}} ()
+\item 
+virtual void \mbox{\hyperlink{class_expr_a1e6867ad86b002a8779c4679d42373c8}{pretty\+\_\+print\+\_\+at}} (std\+::ostream \&ot, \mbox{\hyperlink{_expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdf}{precedence\+\_\+t}}, bool let\+Parenth, std\+::streampos \&streampos)=0
+\item 
+void \mbox{\hyperlink{class_expr_a747e1f67ac65a4dd86458a03c9caa282}{pretty\+\_\+print}} (std\+::ostream \&ot)
+\item 
+std\+::string \mbox{\hyperlink{class_expr_a6ad7c18234f22d96d6917089b5bd7caa}{to\+\_\+pretty\+\_\+string}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_let_expr_a4d335c11ceaf383b19c7be3ec80be2cc}{lhs}}
+\item 
+\mbox{\hyperlink{class_expr}{Expr}} $\ast$ \mbox{\hyperlink{class_let_expr_a21ad0acae196463550d605713e309ecd}{rhs}}
+\item 
+\mbox{\hyperlink{class_expr}{Expr}} $\ast$ \mbox{\hyperlink{class_let_expr_ab9d3883e71225da0ba1bfbfdadf51342}{body}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a let expression 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_let_expr_a183c7c65029679d1a1b1d41451c28c09}\label{class_let_expr_a183c7c65029679d1a1b1d41451c28c09}} 
+\index{LetExpr@{LetExpr}!LetExpr@{LetExpr}}
+\index{LetExpr@{LetExpr}!LetExpr@{LetExpr}}
+\doxysubsubsection{\texorpdfstring{LetExpr()}{LetExpr()}}
+{\footnotesize\ttfamily Let\+Expr\+::\+Let\+Expr (\begin{DoxyParamCaption}\item[{std\+::string}]{lhs,  }\item[{\mbox{\hyperlink{class_expr}{Expr}} $\ast$}]{rhs,  }\item[{\mbox{\hyperlink{class_expr}{Expr}} $\ast$}]{body }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_let_expr_a06fd37372871f675e035f1ee8edd4061}\label{class_let_expr_a06fd37372871f675e035f1ee8edd4061}} 
+\index{LetExpr@{LetExpr}!equals@{equals}}
+\index{equals@{equals}!LetExpr@{LetExpr}}
+\doxysubsubsection{\texorpdfstring{equals()}{equals()}}
+{\footnotesize\ttfamily bool Let\+Expr\+::equals (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_expr}{Expr}} $\ast$}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Compares two expressions
+\begin{DoxyItemize}
+\item We need to cast the checked \mbox{\hyperlink{class_expr}{Expr}} to determine if they type is correct. If the type is incorrect, return false
+\item If type comparison is matching, return if the value stored is the same 
+\begin{DoxyParams}{Parameters}
+{\em e} & what we are comparing \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+if \mbox{\hyperlink{class_expr}{Expr}} are equal 
+\end{DoxyReturn}
+
+\end{DoxyItemize}
+
+Implements \mbox{\hyperlink{class_expr_abf9cdb765fb84304881789d273d7594f}{Expr}}.
+
+\mbox{\Hypertarget{class_let_expr_a23130b914466ff9cee5d76b333fd3440}\label{class_let_expr_a23130b914466ff9cee5d76b333fd3440}} 
+\index{LetExpr@{LetExpr}!has\_variable@{has\_variable}}
+\index{has\_variable@{has\_variable}!LetExpr@{LetExpr}}
+\doxysubsubsection{\texorpdfstring{has\_variable()}{has\_variable()}}
+{\footnotesize\ttfamily bool Let\+Expr\+::has\+\_\+variable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Need to call has\+\_\+variable on rhs and body to determine if Expression contains a variable \begin{DoxyReturn}{Returns}
+true if the expression is a variable or contains a variable, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_expr_a92dc26078993a4b9721ea732274a435c}{Expr}}.
+
+\mbox{\Hypertarget{class_let_expr_a8a25bf277e0af0dfd51a4e5c246057b9}\label{class_let_expr_a8a25bf277e0af0dfd51a4e5c246057b9}} 
+\index{LetExpr@{LetExpr}!interp@{interp}}
+\index{interp@{interp}!LetExpr@{LetExpr}}
+\doxysubsubsection{\texorpdfstring{interp()}{interp()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_val}{Val}} $\ast$ Let\+Expr\+::interp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+The value of a let expression requires substitution of included variable with its value and call of \mbox{\hyperlink{class_let_expr_a8a25bf277e0af0dfd51a4e5c246057b9}{interp()}} on the body of the let expression to determine value of whole expression \begin{DoxyReturn}{Returns}
+an int for the value of the expression 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_expr_aa671ba2b665001c815588a7271735104}{Expr}}.
+
+\mbox{\Hypertarget{class_let_expr_a7422631152726a99c06fe5c3d26791c2}\label{class_let_expr_a7422631152726a99c06fe5c3d26791c2}} 
+\index{LetExpr@{LetExpr}!pretty\_print\_at@{pretty\_print\_at}}
+\index{pretty\_print\_at@{pretty\_print\_at}!LetExpr@{LetExpr}}
+\doxysubsubsection{\texorpdfstring{pretty\_print\_at()}{pretty\_print\_at()}}
+{\footnotesize\ttfamily void Let\+Expr\+::pretty\+\_\+print\+\_\+at (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{ot,  }\item[{\mbox{\hyperlink{_expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdf}{precedence\+\_\+t}}}]{prec,  }\item[{bool}]{let\+Parenth,  }\item[{std\+::streampos \&}]{stream\+Pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Prints the value of an \mbox{\hyperlink{class_let_expr}{Let\+Expr}} to std\+::ostream 
+\begin{DoxyParams}{Parameters}
+{\em ot} & where we will print to \\
+\hline
+{\em prec} & determines the level of formatting for \mbox{\hyperlink{class_expr_a747e1f67ac65a4dd86458a03c9caa282}{pretty\+\_\+print()}} used. \\
+\hline
+{\em let\+Parenth} & determines if parenthesis will be used in \mbox{\hyperlink{class_let_expr}{Let\+Expr}}. \\
+\hline
+{\em stream\+Pos} & determines where and what has been read for print offsetting. Precedence always starts at no precedence when pretty\+\_\+print is initially called and is updated by each recursive call. If precedence is at prec\+\_\+mult, special formatting for \mbox{\hyperlink{class_mult_expr}{Mult\+Expr}} is used for \char`\"{}\+Pretty Printing\char`\"{} of the expression \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_expr_a1e6867ad86b002a8779c4679d42373c8}{Expr}}.
+
+\mbox{\Hypertarget{class_let_expr_a0b458e5fd879624d2cb0ef9d43856b8e}\label{class_let_expr_a0b458e5fd879624d2cb0ef9d43856b8e}} 
+\index{LetExpr@{LetExpr}!print@{print}}
+\index{print@{print}!LetExpr@{LetExpr}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Let\+Expr\+::print (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{ot }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Prints multiplication expressions with included \char`\"{}\+\_\+let\char`\"{} for where substitution will take place and \char`\"{}\+\_\+in\char`\"{} for where value will be used. Every let expression have parentheses around it. 
+\begin{DoxyParams}{Parameters}
+{\em ot} & an ostream where expressions and supporting characters are are stored for printing. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_expr_ae5e0b4d0ddc57bab1c33bf271f49ff4c}{Expr}}.
+
+\mbox{\Hypertarget{class_let_expr_a2cd74757200b521ae9e98425e5c88f14}\label{class_let_expr_a2cd74757200b521ae9e98425e5c88f14}} 
+\index{LetExpr@{LetExpr}!subst@{subst}}
+\index{subst@{subst}!LetExpr@{LetExpr}}
+\doxysubsubsection{\texorpdfstring{subst()}{subst()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_expr}{Expr}} $\ast$ Let\+Expr\+::subst (\begin{DoxyParamCaption}\item[{std\+::string}]{variable,  }\item[{\mbox{\hyperlink{class_expr}{Expr}} $\ast$}]{replacement }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Takes a string and an Expr$\ast$ and everywhere that the expression (whose subst method is called) contains a variable matching the string, the result Expr$\ast$ should have the given replacement, instead. -\/ALWAYS SUBST RHS ALWAYS-\/ Subst in the body if lhs doest equal variable. 
+\begin{DoxyParams}{Parameters}
+{\em string} & variable to match \\
+\hline
+{\em e} & Expression to replace variable with \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+new expression consisting of swapped variables if variables match string 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_expr_a36ff14b766e7d187d2600a01c1fe77e2}{Expr}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_let_expr_ab9d3883e71225da0ba1bfbfdadf51342}\label{class_let_expr_ab9d3883e71225da0ba1bfbfdadf51342}} 
+\index{LetExpr@{LetExpr}!body@{body}}
+\index{body@{body}!LetExpr@{LetExpr}}
+\doxysubsubsection{\texorpdfstring{body}{body}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_expr}{Expr}}$\ast$ Let\+Expr\+::body}
+
+\mbox{\Hypertarget{class_let_expr_a4d335c11ceaf383b19c7be3ec80be2cc}\label{class_let_expr_a4d335c11ceaf383b19c7be3ec80be2cc}} 
+\index{LetExpr@{LetExpr}!lhs@{lhs}}
+\index{lhs@{lhs}!LetExpr@{LetExpr}}
+\doxysubsubsection{\texorpdfstring{lhs}{lhs}}
+{\footnotesize\ttfamily std\+::string Let\+Expr\+::lhs}
+
+\mbox{\Hypertarget{class_let_expr_a21ad0acae196463550d605713e309ecd}\label{class_let_expr_a21ad0acae196463550d605713e309ecd}} 
+\index{LetExpr@{LetExpr}!rhs@{rhs}}
+\index{rhs@{rhs}!LetExpr@{LetExpr}}
+\doxysubsubsection{\texorpdfstring{rhs}{rhs}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_expr}{Expr}}$\ast$ Let\+Expr\+::rhs}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_expr_8h}{Expr.\+h}}\item 
+\mbox{\hyperlink{_expr_8cpp}{Expr.\+cpp}}\end{DoxyCompactItemize}

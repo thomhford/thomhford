@@ -1,0 +1,183 @@
+\hypertarget{class_if_expr}{}\doxysection{If\+Expr Class Reference}
+\label{class_if_expr}\index{IfExpr@{IfExpr}}
+
+
+{\ttfamily \#include $<$Expr.\+h$>$}
+
+Inheritance diagram for If\+Expr\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_if_expr}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_if_expr_a23986c225b4f67b6be72cfea8e5c8c7e}{If\+Expr}} (\mbox{\hyperlink{class_expr}{Expr}} $\ast$\mbox{\hyperlink{class_if_expr_a8b7d42243f7593fe9233a0e0225ab91f}{\+\_\+if}}, \mbox{\hyperlink{class_expr}{Expr}} $\ast$\mbox{\hyperlink{class_if_expr_a9ddb7a51711ca808c20ff648e8523015}{\+\_\+then}}, \mbox{\hyperlink{class_expr}{Expr}} $\ast$\mbox{\hyperlink{class_if_expr_adbb782fcf3e4d1856b5d7e8dbb9fd5b1}{\+\_\+else}})
+\item 
+bool \mbox{\hyperlink{class_if_expr_a55c577b1c1910353d4e509c2e70c2889}{equals}} (\mbox{\hyperlink{class_expr}{Expr}} $\ast$e) override
+\item 
+\mbox{\hyperlink{class_val}{Val}} $\ast$ \mbox{\hyperlink{class_if_expr_a2eb2ffd0f9fd9c09ab69c5b8d572bc87}{interp}} () override
+\item 
+bool \mbox{\hyperlink{class_if_expr_aa2842c992fc3e8197c19db294a0dacd5}{has\+\_\+variable}} () override
+\item 
+\mbox{\hyperlink{class_expr}{Expr}} $\ast$ \mbox{\hyperlink{class_if_expr_aeceaa0e332e6f98176a90643ed129641}{subst}} (std\+::string, \mbox{\hyperlink{class_expr}{Expr}} $\ast$) override
+\item 
+void \mbox{\hyperlink{class_if_expr_ae7362b7fbff6fbd1f5f2e76284af8e95}{print}} (std\+::ostream \&ot) override
+\item 
+void \mbox{\hyperlink{class_if_expr_a40fb34ead924f9c77f636e9bba6a58df}{pretty\+\_\+print\+\_\+at}} (std\+::ostream \&ot, \mbox{\hyperlink{_expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdf}{precedence\+\_\+t}}, bool let\+Parenth, std\+::streampos \&stream\+Pos) override
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_expr}{Expr}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \mbox{\hyperlink{class_expr_abf9cdb765fb84304881789d273d7594f}{equals}} (\mbox{\hyperlink{class_expr}{Expr}} $\ast$e)=0
+\item 
+virtual \mbox{\hyperlink{class_val}{Val}} $\ast$ \mbox{\hyperlink{class_expr_aa671ba2b665001c815588a7271735104}{interp}} ()=0
+\item 
+virtual bool \mbox{\hyperlink{class_expr_a92dc26078993a4b9721ea732274a435c}{has\+\_\+variable}} ()=0
+\item 
+virtual \mbox{\hyperlink{class_expr}{Expr}} $\ast$ \mbox{\hyperlink{class_expr_a36ff14b766e7d187d2600a01c1fe77e2}{subst}} (std\+::string, \mbox{\hyperlink{class_expr}{Expr}} $\ast$)=0
+\item 
+virtual void \mbox{\hyperlink{class_expr_ae5e0b4d0ddc57bab1c33bf271f49ff4c}{print}} (std\+::ostream \&ot)=0
+\item 
+std\+::string \mbox{\hyperlink{class_expr_abe130f37bd185ec13c5113de16fc7bf7}{to\+\_\+string}} ()
+\item 
+virtual void \mbox{\hyperlink{class_expr_a1e6867ad86b002a8779c4679d42373c8}{pretty\+\_\+print\+\_\+at}} (std\+::ostream \&ot, \mbox{\hyperlink{_expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdf}{precedence\+\_\+t}}, bool let\+Parenth, std\+::streampos \&streampos)=0
+\item 
+void \mbox{\hyperlink{class_expr_a747e1f67ac65a4dd86458a03c9caa282}{pretty\+\_\+print}} (std\+::ostream \&ot)
+\item 
+std\+::string \mbox{\hyperlink{class_expr_a6ad7c18234f22d96d6917089b5bd7caa}{to\+\_\+pretty\+\_\+string}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_expr}{Expr}} $\ast$ \mbox{\hyperlink{class_if_expr_a8b7d42243f7593fe9233a0e0225ab91f}{\+\_\+if}}
+\item 
+\mbox{\hyperlink{class_expr}{Expr}} $\ast$ \mbox{\hyperlink{class_if_expr_a9ddb7a51711ca808c20ff648e8523015}{\+\_\+then}}
+\item 
+\mbox{\hyperlink{class_expr}{Expr}} $\ast$ \mbox{\hyperlink{class_if_expr_adbb782fcf3e4d1856b5d7e8dbb9fd5b1}{\+\_\+else}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_if_expr_a23986c225b4f67b6be72cfea8e5c8c7e}\label{class_if_expr_a23986c225b4f67b6be72cfea8e5c8c7e}} 
+\index{IfExpr@{IfExpr}!IfExpr@{IfExpr}}
+\index{IfExpr@{IfExpr}!IfExpr@{IfExpr}}
+\doxysubsubsection{\texorpdfstring{IfExpr()}{IfExpr()}}
+{\footnotesize\ttfamily If\+Expr\+::\+If\+Expr (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_expr}{Expr}} $\ast$}]{\+\_\+if,  }\item[{\mbox{\hyperlink{class_expr}{Expr}} $\ast$}]{\+\_\+then,  }\item[{\mbox{\hyperlink{class_expr}{Expr}} $\ast$}]{\+\_\+else }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_if_expr_a55c577b1c1910353d4e509c2e70c2889}\label{class_if_expr_a55c577b1c1910353d4e509c2e70c2889}} 
+\index{IfExpr@{IfExpr}!equals@{equals}}
+\index{equals@{equals}!IfExpr@{IfExpr}}
+\doxysubsubsection{\texorpdfstring{equals()}{equals()}}
+{\footnotesize\ttfamily bool If\+Expr\+::equals (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_expr}{Expr}} $\ast$}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Compares two expressions
+\begin{DoxyItemize}
+\item We need to cast the checked \mbox{\hyperlink{class_expr}{Expr}} to determine if they type is correct. If the type is incorrect, return false
+\item If type comparison is matching, return if the value stored is the same 
+\begin{DoxyParams}{Parameters}
+{\em e} & what we are comparing \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+if \mbox{\hyperlink{class_expr}{Expr}} are equal 
+\end{DoxyReturn}
+
+\end{DoxyItemize}
+
+Implements \mbox{\hyperlink{class_expr_abf9cdb765fb84304881789d273d7594f}{Expr}}.
+
+\mbox{\Hypertarget{class_if_expr_aa2842c992fc3e8197c19db294a0dacd5}\label{class_if_expr_aa2842c992fc3e8197c19db294a0dacd5}} 
+\index{IfExpr@{IfExpr}!has\_variable@{has\_variable}}
+\index{has\_variable@{has\_variable}!IfExpr@{IfExpr}}
+\doxysubsubsection{\texorpdfstring{has\_variable()}{has\_variable()}}
+{\footnotesize\ttfamily bool If\+Expr\+::has\+\_\+variable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_expr_a92dc26078993a4b9721ea732274a435c}{Expr}}.
+
+\mbox{\Hypertarget{class_if_expr_a2eb2ffd0f9fd9c09ab69c5b8d572bc87}\label{class_if_expr_a2eb2ffd0f9fd9c09ab69c5b8d572bc87}} 
+\index{IfExpr@{IfExpr}!interp@{interp}}
+\index{interp@{interp}!IfExpr@{IfExpr}}
+\doxysubsubsection{\texorpdfstring{interp()}{interp()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_val}{Val}} $\ast$ If\+Expr\+::interp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+The value of a let expression requires substitution of included variable with its value and call of \mbox{\hyperlink{class_if_expr_a2eb2ffd0f9fd9c09ab69c5b8d572bc87}{interp()}} on the body of the let expression to determine value of whole expression \begin{DoxyReturn}{Returns}
+a val for the value of the expression 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_expr_aa671ba2b665001c815588a7271735104}{Expr}}.
+
+\mbox{\Hypertarget{class_if_expr_a40fb34ead924f9c77f636e9bba6a58df}\label{class_if_expr_a40fb34ead924f9c77f636e9bba6a58df}} 
+\index{IfExpr@{IfExpr}!pretty\_print\_at@{pretty\_print\_at}}
+\index{pretty\_print\_at@{pretty\_print\_at}!IfExpr@{IfExpr}}
+\doxysubsubsection{\texorpdfstring{pretty\_print\_at()}{pretty\_print\_at()}}
+{\footnotesize\ttfamily void If\+Expr\+::pretty\+\_\+print\+\_\+at (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{ot,  }\item[{\mbox{\hyperlink{_expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdf}{precedence\+\_\+t}}}]{,  }\item[{bool}]{let\+Parenth,  }\item[{std\+::streampos \&}]{stream\+Pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_expr_a1e6867ad86b002a8779c4679d42373c8}{Expr}}.
+
+\mbox{\Hypertarget{class_if_expr_ae7362b7fbff6fbd1f5f2e76284af8e95}\label{class_if_expr_ae7362b7fbff6fbd1f5f2e76284af8e95}} 
+\index{IfExpr@{IfExpr}!print@{print}}
+\index{print@{print}!IfExpr@{IfExpr}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void If\+Expr\+::print (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{ot }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_expr_ae5e0b4d0ddc57bab1c33bf271f49ff4c}{Expr}}.
+
+\mbox{\Hypertarget{class_if_expr_aeceaa0e332e6f98176a90643ed129641}\label{class_if_expr_aeceaa0e332e6f98176a90643ed129641}} 
+\index{IfExpr@{IfExpr}!subst@{subst}}
+\index{subst@{subst}!IfExpr@{IfExpr}}
+\doxysubsubsection{\texorpdfstring{subst()}{subst()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_expr}{Expr}} $\ast$ If\+Expr\+::subst (\begin{DoxyParamCaption}\item[{std\+::string}]{string,  }\item[{\mbox{\hyperlink{class_expr}{Expr}} $\ast$}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Takes a string and an Expr$\ast$ and everywhere that the expression (whose subst method is called) contains a variable matching the string, the result Expr$\ast$ should have the given replacement, instead. -\/ALWAYS SUBST RHS ALWAYS-\/ Subst in the body if lhs doest equal variable. 
+\begin{DoxyParams}{Parameters}
+{\em string} & variable to match \\
+\hline
+{\em e} & Expression to replace variable with \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+new expression consisting of swapped variables if variables match string 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_expr_a36ff14b766e7d187d2600a01c1fe77e2}{Expr}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_if_expr_adbb782fcf3e4d1856b5d7e8dbb9fd5b1}\label{class_if_expr_adbb782fcf3e4d1856b5d7e8dbb9fd5b1}} 
+\index{IfExpr@{IfExpr}!\_else@{\_else}}
+\index{\_else@{\_else}!IfExpr@{IfExpr}}
+\doxysubsubsection{\texorpdfstring{\_else}{\_else}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_expr}{Expr}}$\ast$ If\+Expr\+::\+\_\+else}
+
+\mbox{\Hypertarget{class_if_expr_a8b7d42243f7593fe9233a0e0225ab91f}\label{class_if_expr_a8b7d42243f7593fe9233a0e0225ab91f}} 
+\index{IfExpr@{IfExpr}!\_if@{\_if}}
+\index{\_if@{\_if}!IfExpr@{IfExpr}}
+\doxysubsubsection{\texorpdfstring{\_if}{\_if}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_expr}{Expr}}$\ast$ If\+Expr\+::\+\_\+if}
+
+\mbox{\Hypertarget{class_if_expr_a9ddb7a51711ca808c20ff648e8523015}\label{class_if_expr_a9ddb7a51711ca808c20ff648e8523015}} 
+\index{IfExpr@{IfExpr}!\_then@{\_then}}
+\index{\_then@{\_then}!IfExpr@{IfExpr}}
+\doxysubsubsection{\texorpdfstring{\_then}{\_then}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_expr}{Expr}}$\ast$ If\+Expr\+::\+\_\+then}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_expr_8h}{Expr.\+h}}\item 
+\mbox{\hyperlink{_expr_8cpp}{Expr.\+cpp}}\end{DoxyCompactItemize}

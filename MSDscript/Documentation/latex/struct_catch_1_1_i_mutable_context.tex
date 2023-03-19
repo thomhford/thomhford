@@ -1,0 +1,116 @@
+\hypertarget{struct_catch_1_1_i_mutable_context}{}\doxysection{Catch\+::IMutable\+Context Struct Reference}
+\label{struct_catch_1_1_i_mutable_context}\index{Catch::IMutableContext@{Catch::IMutableContext}}
+
+
+{\ttfamily \#include $<$catch.\+h$>$}
+
+Inheritance diagram for Catch\+::IMutable\+Context\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{struct_catch_1_1_i_mutable_context}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{struct_catch_1_1_i_mutable_context_a93f32b2ab6d0fb83637059240be799ab}{$\sim$\+IMutable\+Context}} ()
+\item 
+virtual void \mbox{\hyperlink{struct_catch_1_1_i_mutable_context_a4a80afd0525b7def21bee8d9b48f2d39}{set\+Result\+Capture}} (\mbox{\hyperlink{struct_catch_1_1_i_result_capture}{IResult\+Capture}} $\ast$result\+Capture)=0
+\item 
+virtual void \mbox{\hyperlink{struct_catch_1_1_i_mutable_context_af2e53b1dea4527a2587cff266a730f6e}{set\+Runner}} (\mbox{\hyperlink{struct_catch_1_1_i_runner}{IRunner}} $\ast$runner)=0
+\item 
+virtual void \mbox{\hyperlink{struct_catch_1_1_i_mutable_context_aa81ba080fce084e9482f20338bc88531}{set\+Config}} (\mbox{\hyperlink{namespace_catch_afd20a5d4f9d2f4d525db81a7765367b0}{IConfig\+Ptr}} const \&config)=0
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{struct_catch_1_1_i_context}{Catch\+::\+IContext}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{struct_catch_1_1_i_context_aeb17355c1be6c2ced5407cad7202628d}{$\sim$\+IContext}} ()
+\item 
+virtual \mbox{\hyperlink{struct_catch_1_1_i_result_capture}{IResult\+Capture}} $\ast$ \mbox{\hyperlink{struct_catch_1_1_i_context_a950f10a5f6d3c9385f9493ba6298b174}{get\+Result\+Capture}} ()=0
+\item 
+virtual \mbox{\hyperlink{struct_catch_1_1_i_runner}{IRunner}} $\ast$ \mbox{\hyperlink{struct_catch_1_1_i_context_ace6ece997b27c76d70563272f9e93f2f}{get\+Runner}} ()=0
+\item 
+virtual \mbox{\hyperlink{namespace_catch_afd20a5d4f9d2f4d525db81a7765367b0}{IConfig\+Ptr}} const \& \mbox{\hyperlink{struct_catch_1_1_i_context_ad72743ae753feab0a6f5505f26f79ced}{get\+Config}} () const =0
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{struct_catch_1_1_i_mutable_context_a17e4b3f9a9674af7e2c4f081c692a628}{create\+Context}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{struct_catch_1_1_i_mutable_context}{IMutable\+Context}} $\ast$ \mbox{\hyperlink{struct_catch_1_1_i_mutable_context_aca4de034d0deed74dba34f143e4e273e}{current\+Context}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_catch_1_1_i_mutable_context}{IMutable\+Context}} \& \mbox{\hyperlink{struct_catch_1_1_i_mutable_context_ad22507c2e4bc58f80a205db9756b8e29}{get\+Current\+Mutable\+Context}} ()
+\item 
+void \mbox{\hyperlink{struct_catch_1_1_i_mutable_context_ac07cdb7d744cc8f09672d924324b55fd}{clean\+Up\+Context}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{struct_catch_1_1_i_mutable_context_a93f32b2ab6d0fb83637059240be799ab}\label{struct_catch_1_1_i_mutable_context_a93f32b2ab6d0fb83637059240be799ab}} 
+\index{Catch::IMutableContext@{Catch::IMutableContext}!````~IMutableContext@{$\sim$IMutableContext}}
+\index{````~IMutableContext@{$\sim$IMutableContext}!Catch::IMutableContext@{Catch::IMutableContext}}
+\doxysubsubsection{\texorpdfstring{$\sim$IMutableContext()}{~IMutableContext()}}
+{\footnotesize\ttfamily virtual Catch\+::\+IMutable\+Context\+::$\sim$\+IMutable\+Context (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{struct_catch_1_1_i_mutable_context_a17e4b3f9a9674af7e2c4f081c692a628}\label{struct_catch_1_1_i_mutable_context_a17e4b3f9a9674af7e2c4f081c692a628}} 
+\index{Catch::IMutableContext@{Catch::IMutableContext}!createContext@{createContext}}
+\index{createContext@{createContext}!Catch::IMutableContext@{Catch::IMutableContext}}
+\doxysubsubsection{\texorpdfstring{createContext()}{createContext()}}
+{\footnotesize\ttfamily static void Catch\+::\+IMutable\+Context\+::create\+Context (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{struct_catch_1_1_i_mutable_context_aa81ba080fce084e9482f20338bc88531}\label{struct_catch_1_1_i_mutable_context_aa81ba080fce084e9482f20338bc88531}} 
+\index{Catch::IMutableContext@{Catch::IMutableContext}!setConfig@{setConfig}}
+\index{setConfig@{setConfig}!Catch::IMutableContext@{Catch::IMutableContext}}
+\doxysubsubsection{\texorpdfstring{setConfig()}{setConfig()}}
+{\footnotesize\ttfamily virtual void Catch\+::\+IMutable\+Context\+::set\+Config (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_catch_afd20a5d4f9d2f4d525db81a7765367b0}{IConfig\+Ptr}} const \&}]{config }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\mbox{\Hypertarget{struct_catch_1_1_i_mutable_context_a4a80afd0525b7def21bee8d9b48f2d39}\label{struct_catch_1_1_i_mutable_context_a4a80afd0525b7def21bee8d9b48f2d39}} 
+\index{Catch::IMutableContext@{Catch::IMutableContext}!setResultCapture@{setResultCapture}}
+\index{setResultCapture@{setResultCapture}!Catch::IMutableContext@{Catch::IMutableContext}}
+\doxysubsubsection{\texorpdfstring{setResultCapture()}{setResultCapture()}}
+{\footnotesize\ttfamily virtual void Catch\+::\+IMutable\+Context\+::set\+Result\+Capture (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_catch_1_1_i_result_capture}{IResult\+Capture}} $\ast$}]{result\+Capture }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\mbox{\Hypertarget{struct_catch_1_1_i_mutable_context_af2e53b1dea4527a2587cff266a730f6e}\label{struct_catch_1_1_i_mutable_context_af2e53b1dea4527a2587cff266a730f6e}} 
+\index{Catch::IMutableContext@{Catch::IMutableContext}!setRunner@{setRunner}}
+\index{setRunner@{setRunner}!Catch::IMutableContext@{Catch::IMutableContext}}
+\doxysubsubsection{\texorpdfstring{setRunner()}{setRunner()}}
+{\footnotesize\ttfamily virtual void Catch\+::\+IMutable\+Context\+::set\+Runner (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_catch_1_1_i_runner}{IRunner}} $\ast$}]{runner }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{struct_catch_1_1_i_mutable_context_ac07cdb7d744cc8f09672d924324b55fd}\label{struct_catch_1_1_i_mutable_context_ac07cdb7d744cc8f09672d924324b55fd}} 
+\index{Catch::IMutableContext@{Catch::IMutableContext}!cleanUpContext@{cleanUpContext}}
+\index{cleanUpContext@{cleanUpContext}!Catch::IMutableContext@{Catch::IMutableContext}}
+\doxysubsubsection{\texorpdfstring{cleanUpContext}{cleanUpContext}}
+{\footnotesize\ttfamily void clean\+Up\+Context (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+\mbox{\Hypertarget{struct_catch_1_1_i_mutable_context_ad22507c2e4bc58f80a205db9756b8e29}\label{struct_catch_1_1_i_mutable_context_ad22507c2e4bc58f80a205db9756b8e29}} 
+\index{Catch::IMutableContext@{Catch::IMutableContext}!getCurrentMutableContext@{getCurrentMutableContext}}
+\index{getCurrentMutableContext@{getCurrentMutableContext}!Catch::IMutableContext@{Catch::IMutableContext}}
+\doxysubsubsection{\texorpdfstring{getCurrentMutableContext}{getCurrentMutableContext}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_catch_1_1_i_mutable_context}{IMutable\+Context}} \& get\+Current\+Mutable\+Context (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_catch_1_1_i_mutable_context_aca4de034d0deed74dba34f143e4e273e}\label{struct_catch_1_1_i_mutable_context_aca4de034d0deed74dba34f143e4e273e}} 
+\index{Catch::IMutableContext@{Catch::IMutableContext}!currentContext@{currentContext}}
+\index{currentContext@{currentContext}!Catch::IMutableContext@{Catch::IMutableContext}}
+\doxysubsubsection{\texorpdfstring{currentContext}{currentContext}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_catch_1_1_i_mutable_context}{IMutable\+Context}}$\ast$ Catch\+::\+IMutable\+Context\+::current\+Context\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{catch_8h}{catch.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,169 @@
+\hypertarget{parse_8h}{}\doxysection{parse.\+h File Reference}
+\label{parse_8h}\index{parse.h@{parse.h}}
+{\ttfamily \#include \char`\"{}Expr.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_expr}{Expr}} $\ast$ \mbox{\hyperlink{parse_8h_a07b3dca8f632e9fb5beea05b92ca2a82}{parse\+\_\+num}} (std\+::istream \&in)
+\item 
+\mbox{\hyperlink{class_expr}{Expr}} $\ast$ \mbox{\hyperlink{parse_8h_aa0e60a31d186f4377681b2f17737cc3b}{parse\+\_\+var}} (std\+::istream \&in)
+\item 
+\mbox{\hyperlink{class_expr}{Expr}} $\ast$ \mbox{\hyperlink{parse_8h_a3b7e13bbf3399b53c5f24c66f243a9fa}{parse\+\_\+let}} (std\+::istream \&in)
+\item 
+\mbox{\hyperlink{class_expr}{Expr}} $\ast$ \mbox{\hyperlink{parse_8h_a1dce771687d9488eb8c036fa7b8f6cfb}{parse\+\_\+if}} (std\+::istream \&in)
+\item 
+std\+::string \mbox{\hyperlink{parse_8h_ac7ffed9ed97ecdecf39d6a7d92ada58a}{parse\+\_\+keyword}} (std\+::istream \&in)
+\item 
+\mbox{\hyperlink{class_expr}{Expr}} $\ast$ \mbox{\hyperlink{parse_8h_ad69fc10130374e67252011d435a29656}{parse\+\_\+expr}} (std\+::istream \&in)
+\item 
+\mbox{\hyperlink{class_expr}{Expr}} $\ast$ \mbox{\hyperlink{parse_8h_a7673dcb66b60f9ed05fce1595a9ba74f}{parse\+\_\+comparg}} (std\+::istream \&in)
+\item 
+\mbox{\hyperlink{class_expr}{Expr}} $\ast$ \mbox{\hyperlink{parse_8h_a3fb3cf5fc9fcdf9c2c37caa5caceba9b}{parse\+\_\+addend}} (std\+::istream \&in)
+\item 
+\mbox{\hyperlink{class_expr}{Expr}} $\ast$ \mbox{\hyperlink{parse_8h_a6e1ccd32bdf8c66064be5f3c1b365020}{parse\+\_\+multicand}} (std\+::istream \&in)
+\item 
+\mbox{\hyperlink{class_expr}{Expr}} $\ast$ \mbox{\hyperlink{parse_8h_a7c44e962b47aa78012851be721151dfc}{parse\+\_\+str}} (const std\+::string \&s)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{parse_8h_a3fb3cf5fc9fcdf9c2c37caa5caceba9b}\label{parse_8h_a3fb3cf5fc9fcdf9c2c37caa5caceba9b}} 
+\index{parse.h@{parse.h}!parse\_addend@{parse\_addend}}
+\index{parse\_addend@{parse\_addend}!parse.h@{parse.h}}
+\doxysubsubsection{\texorpdfstring{parse\_addend()}{parse\_addend()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_expr}{Expr}} $\ast$ parse\+\_\+addend (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{in }\end{DoxyParamCaption})}
+
+Parser called by parse\+\_\+comparg. Handles \mbox{\hyperlink{class_mult_expr}{Mult\+Expr}} and can call parse\+\_\+multicand if needed 
+\begin{DoxyParams}{Parameters}
+{\em in} & where is being read from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an expression representing what was parsed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{parse_8h_a7673dcb66b60f9ed05fce1595a9ba74f}\label{parse_8h_a7673dcb66b60f9ed05fce1595a9ba74f}} 
+\index{parse.h@{parse.h}!parse\_comparg@{parse\_comparg}}
+\index{parse\_comparg@{parse\_comparg}!parse.h@{parse.h}}
+\doxysubsubsection{\texorpdfstring{parse\_comparg()}{parse\_comparg()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_expr}{Expr}} $\ast$ parse\+\_\+comparg (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{in }\end{DoxyParamCaption})}
+
+Parser called by parse\+\_\+expr. Handles \mbox{\hyperlink{class_add_expr}{Add\+Expr}} and can call parse\+\_\+addend if needed 
+\begin{DoxyParams}{Parameters}
+{\em in} & where is being read from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an expression representing what was parsed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{parse_8h_ad69fc10130374e67252011d435a29656}\label{parse_8h_ad69fc10130374e67252011d435a29656}} 
+\index{parse.h@{parse.h}!parse\_expr@{parse\_expr}}
+\index{parse\_expr@{parse\_expr}!parse.h@{parse.h}}
+\doxysubsubsection{\texorpdfstring{parse\_expr()}{parse\_expr()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_expr}{Expr}} $\ast$ parse\+\_\+expr (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{in }\end{DoxyParamCaption})}
+
+Base parser. Will call additional parsers if needed including parse\+\_\+addend. Handles expressions up to \mbox{\hyperlink{class_add_expr}{Add\+Expr}} 
+\begin{DoxyParams}{Parameters}
+{\em in} & where is being read from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an expression representing what was parsed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{parse_8h_a1dce771687d9488eb8c036fa7b8f6cfb}\label{parse_8h_a1dce771687d9488eb8c036fa7b8f6cfb}} 
+\index{parse.h@{parse.h}!parse\_if@{parse\_if}}
+\index{parse\_if@{parse\_if}!parse.h@{parse.h}}
+\doxysubsubsection{\texorpdfstring{parse\_if()}{parse\_if()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_expr}{Expr}} $\ast$ parse\+\_\+if (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{in }\end{DoxyParamCaption})}
+
+Parses \mbox{\hyperlink{class_if_expr}{If\+Expr}} 
+\begin{DoxyParams}{Parameters}
+{\em in} & where is being read from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an \mbox{\hyperlink{class_if_expr}{If\+Expr}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{parse_8h_ac7ffed9ed97ecdecf39d6a7d92ada58a}\label{parse_8h_ac7ffed9ed97ecdecf39d6a7d92ada58a}} 
+\index{parse.h@{parse.h}!parse\_keyword@{parse\_keyword}}
+\index{parse\_keyword@{parse\_keyword}!parse.h@{parse.h}}
+\doxysubsubsection{\texorpdfstring{parse\_keyword()}{parse\_keyword()}}
+{\footnotesize\ttfamily std\+::string parse\+\_\+keyword (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{in }\end{DoxyParamCaption})}
+
+A helper method to read string values to check against required values 
+\begin{DoxyParams}{Parameters}
+{\em in} & Where reading from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a string representing what was read 
+\end{DoxyReturn}
+\mbox{\Hypertarget{parse_8h_a3b7e13bbf3399b53c5f24c66f243a9fa}\label{parse_8h_a3b7e13bbf3399b53c5f24c66f243a9fa}} 
+\index{parse.h@{parse.h}!parse\_let@{parse\_let}}
+\index{parse\_let@{parse\_let}!parse.h@{parse.h}}
+\doxysubsubsection{\texorpdfstring{parse\_let()}{parse\_let()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_expr}{Expr}} $\ast$ parse\+\_\+let (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{in }\end{DoxyParamCaption})}
+
+Parses \mbox{\hyperlink{class_let_expr}{Let\+Expr}} 
+\begin{DoxyParams}{Parameters}
+{\em in} & where is being read from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a \mbox{\hyperlink{class_let_expr}{Let\+Expr}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{parse_8h_a6e1ccd32bdf8c66064be5f3c1b365020}\label{parse_8h_a6e1ccd32bdf8c66064be5f3c1b365020}} 
+\index{parse.h@{parse.h}!parse\_multicand@{parse\_multicand}}
+\index{parse\_multicand@{parse\_multicand}!parse.h@{parse.h}}
+\doxysubsubsection{\texorpdfstring{parse\_multicand()}{parse\_multicand()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_expr}{Expr}} $\ast$ parse\+\_\+multicand (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{in }\end{DoxyParamCaption})}
+
+Parser called by parse\+\_\+addend. Handles everything not handles by previous parsers including parenthesis and \mbox{\hyperlink{class_let_expr}{Let\+Expr}} 
+\begin{DoxyParams}{Parameters}
+{\em in} & where is being read from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an expression representing what was parsed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{parse_8h_a07b3dca8f632e9fb5beea05b92ca2a82}\label{parse_8h_a07b3dca8f632e9fb5beea05b92ca2a82}} 
+\index{parse.h@{parse.h}!parse\_num@{parse\_num}}
+\index{parse\_num@{parse\_num}!parse.h@{parse.h}}
+\doxysubsubsection{\texorpdfstring{parse\_num()}{parse\_num()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_expr}{Expr}} $\ast$ parse\+\_\+num (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{in }\end{DoxyParamCaption})}
+
+Parses \mbox{\hyperlink{class_num_expr}{Num\+Expr}} 
+\begin{DoxyParams}{Parameters}
+{\em in} & where is being read from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a \mbox{\hyperlink{class_num_expr}{Num\+Expr}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{parse_8h_a7c44e962b47aa78012851be721151dfc}\label{parse_8h_a7c44e962b47aa78012851be721151dfc}} 
+\index{parse.h@{parse.h}!parse\_str@{parse\_str}}
+\index{parse\_str@{parse\_str}!parse.h@{parse.h}}
+\doxysubsubsection{\texorpdfstring{parse\_str()}{parse\_str()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_expr}{Expr}} $\ast$ parse\+\_\+str (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{s }\end{DoxyParamCaption})}
+
+used to read string representations of expressions 
+\begin{DoxyParams}{Parameters}
+{\em s} & what is being read \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the expressions represented by the inputted string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{parse_8h_aa0e60a31d186f4377681b2f17737cc3b}\label{parse_8h_aa0e60a31d186f4377681b2f17737cc3b}} 
+\index{parse.h@{parse.h}!parse\_var@{parse\_var}}
+\index{parse\_var@{parse\_var}!parse.h@{parse.h}}
+\doxysubsubsection{\texorpdfstring{parse\_var()}{parse\_var()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_expr}{Expr}} $\ast$ parse\+\_\+var (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{in }\end{DoxyParamCaption})}
+
+Parses \mbox{\hyperlink{class_var_expr}{Var\+Expr}} 
+\begin{DoxyParams}{Parameters}
+{\em in} & where is being read from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a \mbox{\hyperlink{class_var_expr}{Var\+Expr}} 
+\end{DoxyReturn}

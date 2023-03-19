@@ -1,0 +1,66 @@
+\hypertarget{cmdline_8cpp}{}\doxysection{cmdline.\+cpp File Reference}
+\label{cmdline_8cpp}\index{cmdline.cpp@{cmdline.cpp}}
+
+
+Reads command line arguments and runs said commands.  
+
+
+{\ttfamily \#include \char`\"{}cmdline.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}catch.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{cmdline_8cpp_a34b4c3eca7342fbc4cba090d02139902}{CATCH\+\_\+\+CONFIG\+\_\+\+RUNNER}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{cmdline_8h_ab7d9043cd339ce50c3582b04c5fbb4df}{run\+\_\+mode\+\_\+t}} \mbox{\hyperlink{cmdline_8cpp_a8de632883509f14cbca81da992d8952f}{use\+\_\+arguments}} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Reads command line arguments and runs said commands. 
+
+This program runs at the command line and can be given program arguments. For example,
+
+./msdscript --help
+
+This will run the program msdscript in the current directory with the argument --help. Arguments are passed to a program as the argc and argv arguments to main\+:
+
+int \mbox{\hyperlink{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main(int argc, char$\ast$ argv\mbox{[}$\,$\mbox{]})}} \{ .... \}
+
+The argc passed to main is always at least 1, because the first “argument” (at index 0) is the name of the program as it was run on the command line. If argc is 2, that means the program was given one argument, maybe as
+
+./msdscript --help
+
+and then argv\mbox{[}1\mbox{]} is that argument, which is \char`\"{}-\/-\/help\char`\"{} in this case.
+
+Possible commands\+: --help --test
+
+\begin{DoxyAuthor}{Author}
+Thomas Ford 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+02-\/07-\/2023 
+\end{DoxyDate}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{cmdline_8cpp_a34b4c3eca7342fbc4cba090d02139902}\label{cmdline_8cpp_a34b4c3eca7342fbc4cba090d02139902}} 
+\index{cmdline.cpp@{cmdline.cpp}!CATCH\_CONFIG\_RUNNER@{CATCH\_CONFIG\_RUNNER}}
+\index{CATCH\_CONFIG\_RUNNER@{CATCH\_CONFIG\_RUNNER}!cmdline.cpp@{cmdline.cpp}}
+\doxysubsubsection{\texorpdfstring{CATCH\_CONFIG\_RUNNER}{CATCH\_CONFIG\_RUNNER}}
+{\footnotesize\ttfamily \#define CATCH\+\_\+\+CONFIG\+\_\+\+RUNNER}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{cmdline_8cpp_a8de632883509f14cbca81da992d8952f}\label{cmdline_8cpp_a8de632883509f14cbca81da992d8952f}} 
+\index{cmdline.cpp@{cmdline.cpp}!use\_arguments@{use\_arguments}}
+\index{use\_arguments@{use\_arguments}!cmdline.cpp@{cmdline.cpp}}
+\doxysubsubsection{\texorpdfstring{use\_arguments()}{use\_arguments()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{cmdline_8h_ab7d9043cd339ce50c3582b04c5fbb4df}{run\+\_\+mode\+\_\+t}} use\+\_\+arguments (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+

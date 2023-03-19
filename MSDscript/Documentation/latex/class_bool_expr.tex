@@ -1,0 +1,167 @@
+\hypertarget{class_bool_expr}{}\doxysection{Bool\+Expr Class Reference}
+\label{class_bool_expr}\index{BoolExpr@{BoolExpr}}
+
+
+{\ttfamily \#include $<$Expr.\+h$>$}
+
+Inheritance diagram for Bool\+Expr\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_bool_expr}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_bool_expr_a38b87bbe293c2fd74e12fcfa4946b194}{Bool\+Expr}} (bool \mbox{\hyperlink{class_bool_expr_a01b2b6cf4e050c4cae0f0f529d21e272}{val}})
+\item 
+bool \mbox{\hyperlink{class_bool_expr_a0d2147cc045de4ad476d89c8f4bec951}{equals}} (\mbox{\hyperlink{class_expr}{Expr}} $\ast$e) override
+\item 
+\mbox{\hyperlink{class_val}{Val}} $\ast$ \mbox{\hyperlink{class_bool_expr_aeb16d81e32260a0716b9eaef10d35400}{interp}} () override
+\item 
+bool \mbox{\hyperlink{class_bool_expr_a11b7f6d7af2a4e3134543f0425f9856b}{has\+\_\+variable}} () override
+\item 
+\mbox{\hyperlink{class_expr}{Expr}} $\ast$ \mbox{\hyperlink{class_bool_expr_a66a4a52508e34e12b27203650448761d}{subst}} (std\+::string, \mbox{\hyperlink{class_expr}{Expr}} $\ast$) override
+\item 
+void \mbox{\hyperlink{class_bool_expr_af7efa74f0f50fd2b8f5b1e68c896b97e}{print}} (std\+::ostream \&ot) override
+\item 
+void \mbox{\hyperlink{class_bool_expr_aa8a62c662ceb1f5978a4a85193d70afb}{pretty\+\_\+print\+\_\+at}} (std\+::ostream \&ot, \mbox{\hyperlink{_expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdf}{precedence\+\_\+t}}, bool let\+Parenth, std\+::streampos \&stream\+Pos) override
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_expr}{Expr}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \mbox{\hyperlink{class_expr_abf9cdb765fb84304881789d273d7594f}{equals}} (\mbox{\hyperlink{class_expr}{Expr}} $\ast$e)=0
+\item 
+virtual \mbox{\hyperlink{class_val}{Val}} $\ast$ \mbox{\hyperlink{class_expr_aa671ba2b665001c815588a7271735104}{interp}} ()=0
+\item 
+virtual bool \mbox{\hyperlink{class_expr_a92dc26078993a4b9721ea732274a435c}{has\+\_\+variable}} ()=0
+\item 
+virtual \mbox{\hyperlink{class_expr}{Expr}} $\ast$ \mbox{\hyperlink{class_expr_a36ff14b766e7d187d2600a01c1fe77e2}{subst}} (std\+::string, \mbox{\hyperlink{class_expr}{Expr}} $\ast$)=0
+\item 
+virtual void \mbox{\hyperlink{class_expr_ae5e0b4d0ddc57bab1c33bf271f49ff4c}{print}} (std\+::ostream \&ot)=0
+\item 
+std\+::string \mbox{\hyperlink{class_expr_abe130f37bd185ec13c5113de16fc7bf7}{to\+\_\+string}} ()
+\item 
+virtual void \mbox{\hyperlink{class_expr_a1e6867ad86b002a8779c4679d42373c8}{pretty\+\_\+print\+\_\+at}} (std\+::ostream \&ot, \mbox{\hyperlink{_expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdf}{precedence\+\_\+t}}, bool let\+Parenth, std\+::streampos \&streampos)=0
+\item 
+void \mbox{\hyperlink{class_expr_a747e1f67ac65a4dd86458a03c9caa282}{pretty\+\_\+print}} (std\+::ostream \&ot)
+\item 
+std\+::string \mbox{\hyperlink{class_expr_a6ad7c18234f22d96d6917089b5bd7caa}{to\+\_\+pretty\+\_\+string}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_bool_expr_a01b2b6cf4e050c4cae0f0f529d21e272}{val}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_bool_expr_a38b87bbe293c2fd74e12fcfa4946b194}\label{class_bool_expr_a38b87bbe293c2fd74e12fcfa4946b194}} 
+\index{BoolExpr@{BoolExpr}!BoolExpr@{BoolExpr}}
+\index{BoolExpr@{BoolExpr}!BoolExpr@{BoolExpr}}
+\doxysubsubsection{\texorpdfstring{BoolExpr()}{BoolExpr()}}
+{\footnotesize\ttfamily Bool\+Expr\+::\+Bool\+Expr (\begin{DoxyParamCaption}\item[{bool}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_bool_expr_a0d2147cc045de4ad476d89c8f4bec951}\label{class_bool_expr_a0d2147cc045de4ad476d89c8f4bec951}} 
+\index{BoolExpr@{BoolExpr}!equals@{equals}}
+\index{equals@{equals}!BoolExpr@{BoolExpr}}
+\doxysubsubsection{\texorpdfstring{equals()}{equals()}}
+{\footnotesize\ttfamily bool Bool\+Expr\+::equals (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_expr}{Expr}} $\ast$}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Compares two expressions
+\begin{DoxyItemize}
+\item We need to cast the checked \mbox{\hyperlink{class_expr}{Expr}} to determine if they type is correct. If the type is incorrect, return false
+\item If type comparison is matching, return if the value stored is the same 
+\begin{DoxyParams}{Parameters}
+{\em e} & what we are comparing \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+if \mbox{\hyperlink{class_expr}{Expr}} are equal 
+\end{DoxyReturn}
+
+\end{DoxyItemize}
+
+Implements \mbox{\hyperlink{class_expr_abf9cdb765fb84304881789d273d7594f}{Expr}}.
+
+\mbox{\Hypertarget{class_bool_expr_a11b7f6d7af2a4e3134543f0425f9856b}\label{class_bool_expr_a11b7f6d7af2a4e3134543f0425f9856b}} 
+\index{BoolExpr@{BoolExpr}!has\_variable@{has\_variable}}
+\index{has\_variable@{has\_variable}!BoolExpr@{BoolExpr}}
+\doxysubsubsection{\texorpdfstring{has\_variable()}{has\_variable()}}
+{\footnotesize\ttfamily bool Bool\+Expr\+::has\+\_\+variable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_expr_a92dc26078993a4b9721ea732274a435c}{Expr}}.
+
+\mbox{\Hypertarget{class_bool_expr_aeb16d81e32260a0716b9eaef10d35400}\label{class_bool_expr_aeb16d81e32260a0716b9eaef10d35400}} 
+\index{BoolExpr@{BoolExpr}!interp@{interp}}
+\index{interp@{interp}!BoolExpr@{BoolExpr}}
+\doxysubsubsection{\texorpdfstring{interp()}{interp()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_val}{Val}} $\ast$ Bool\+Expr\+::interp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+The value of a let expression requires substitution of included variable with its value and call of \mbox{\hyperlink{class_bool_expr_aeb16d81e32260a0716b9eaef10d35400}{interp()}} on the body of the let expression to determine value of whole expression \begin{DoxyReturn}{Returns}
+a \mbox{\hyperlink{class_val}{Val}} for the value of the expression 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_expr_aa671ba2b665001c815588a7271735104}{Expr}}.
+
+\mbox{\Hypertarget{class_bool_expr_aa8a62c662ceb1f5978a4a85193d70afb}\label{class_bool_expr_aa8a62c662ceb1f5978a4a85193d70afb}} 
+\index{BoolExpr@{BoolExpr}!pretty\_print\_at@{pretty\_print\_at}}
+\index{pretty\_print\_at@{pretty\_print\_at}!BoolExpr@{BoolExpr}}
+\doxysubsubsection{\texorpdfstring{pretty\_print\_at()}{pretty\_print\_at()}}
+{\footnotesize\ttfamily void Bool\+Expr\+::pretty\+\_\+print\+\_\+at (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{ot,  }\item[{\mbox{\hyperlink{_expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdf}{precedence\+\_\+t}}}]{,  }\item[{bool}]{let\+Parenth,  }\item[{std\+::streampos \&}]{stream\+Pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_expr_a1e6867ad86b002a8779c4679d42373c8}{Expr}}.
+
+\mbox{\Hypertarget{class_bool_expr_af7efa74f0f50fd2b8f5b1e68c896b97e}\label{class_bool_expr_af7efa74f0f50fd2b8f5b1e68c896b97e}} 
+\index{BoolExpr@{BoolExpr}!print@{print}}
+\index{print@{print}!BoolExpr@{BoolExpr}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Bool\+Expr\+::print (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{ot }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_expr_ae5e0b4d0ddc57bab1c33bf271f49ff4c}{Expr}}.
+
+\mbox{\Hypertarget{class_bool_expr_a66a4a52508e34e12b27203650448761d}\label{class_bool_expr_a66a4a52508e34e12b27203650448761d}} 
+\index{BoolExpr@{BoolExpr}!subst@{subst}}
+\index{subst@{subst}!BoolExpr@{BoolExpr}}
+\doxysubsubsection{\texorpdfstring{subst()}{subst()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_expr}{Expr}} $\ast$ Bool\+Expr\+::subst (\begin{DoxyParamCaption}\item[{std\+::string}]{,  }\item[{\mbox{\hyperlink{class_expr}{Expr}} $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Takes a string and an Expr$\ast$ and everywhere that the expression (whose subst method is called) contains a variable matching the string, the result Expr$\ast$ should have the given replacement, instead. -\/ALWAYS SUBST RHS ALWAYS-\/ Subst in the body if lhs doest equal variable. 
+\begin{DoxyParams}{Parameters}
+{\em string} & variable to match \\
+\hline
+{\em e} & Expression to replace variable with \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+new expression consisting of swapped variables if variables match string 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_expr_a36ff14b766e7d187d2600a01c1fe77e2}{Expr}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_bool_expr_a01b2b6cf4e050c4cae0f0f529d21e272}\label{class_bool_expr_a01b2b6cf4e050c4cae0f0f529d21e272}} 
+\index{BoolExpr@{BoolExpr}!val@{val}}
+\index{val@{val}!BoolExpr@{BoolExpr}}
+\doxysubsubsection{\texorpdfstring{val}{val}}
+{\footnotesize\ttfamily bool Bool\+Expr\+::val}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_expr_8h}{Expr.\+h}}\item 
+\mbox{\hyperlink{_expr_8cpp}{Expr.\+cpp}}\end{DoxyCompactItemize}

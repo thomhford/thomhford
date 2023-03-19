@@ -39,7 +39,6 @@ CMakeLists.txt
 # Other
 *.idea
 *.DS_Store
-Documentation*/
 
 # IntelliJ
 out/
