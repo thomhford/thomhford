@@ -28,5 +28,35 @@
 
 # Executables
 *.exe
+*.exec
 *.out
 *.app
+
+# CMake
+cmake-build-*/
+CMakeLists.txt
+
+# Other
+*.idea
+*.DS_Store
+Documentation*/
+
+# IntelliJ
+out/
+.idea/
+.idea_modules/
+*.iml
+*.ipr
+*.iws
+
+# OS X
+*.DS_Store
+
+# Java
+*.class
+.mtj.tmp/
+*.jar
+*.war
+*.ear
+*.nar
+hs_err_pid*
