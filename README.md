@@ -21,3 +21,6 @@ I have an exciting list of projects that you can check out.  Feel free to take a
 * [malloc() / free() Replacement](Malloc_Free_Replacement)
     - Languages: C/C++
     - Replacement for malloc() and free() that uses the mmap and munmap system calls to allocate and deallocate memory.
+* [TLSlite](TLSlite)
+    - Languages: Java
+    - Simplified TLS implementation demonstrating the TLS handshake and encrypting and decrypting messages between a server and client.
