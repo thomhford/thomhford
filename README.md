@@ -22,6 +22,9 @@ I have an exciting list of projects that you can check out.  Feel free to take a
 
 </p>
 
+- [BluetoothScanner](https://github.com/thomhford/BluetoothScanner.git)
+  - Languages: Swift
+  - SwiftUI application designed to scan for and connect to Bluetooth devices in the vicinity..
 - [MSDScript](MSDscript)
   - Languages: C++
   - Created basic mathematical scripting language interpreter and fuzzer. Also wrote up complete documentation for installation and use of the language.
